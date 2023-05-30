@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script href="./scripts/index.js"></script>
+  <link rel="stylesheet" href="./styles/index.scss">
   <title>Hashtag You FE Assignment</title>
 </head>
+
 <body>
-</body>
+  <main>
+    <header class="header">
+      <p>Product List</p> <button id="openModal">Open Cart</button>
+    </header>
+    <div class="page"> <div class="products__container" id="productsContainer">
+    </div>
+    <button id="addMoreProducts">Add More</button>
+
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <div class="modal__header"> <h2>Cart</h2>
+          <span class="close">&times;</span></div>
+        <ul id="cartItems"></ul>
+      </div>
+</div>
+  </main>
 </html>
